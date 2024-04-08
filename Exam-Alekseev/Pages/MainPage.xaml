@@ -1,0 +1,39 @@
+﻿<Page x:Class="Exam_Alekseev.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Exam_Alekseev.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button x:Name="BTakeOrder"
+                    Content="Оставить заказ"
+                    Click="BTakeOrder_Click"/>
+            <Button x:Name="BList"
+                    Content="Список заказов"
+                    Click="BList_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="DGORders"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  Grid.Column="1"
+            <TextBlock Text="Data">
+            </TextBlock>
+        </DataGrid>
+       
+        
+
+    </Grid>
+</Page>
