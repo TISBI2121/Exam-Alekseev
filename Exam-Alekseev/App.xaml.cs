@@ -17,6 +17,7 @@ namespace Exam_Alekseev
     public partial class App : Application
     {
         public static Entities db = new Entities();
+        User = LoggedUser
     }
 }
 
